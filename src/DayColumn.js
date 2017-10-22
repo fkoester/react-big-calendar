@@ -187,7 +187,7 @@ class DayColumn extends React.Component {
       if (_continuesPrior && _continuesAfter) {
         label = messages.allDay;
       } else {
-          label = localizer.format({start, end}, _eventTimeRangeFormat, culture);
+          label = localizer.format(start, 'HH:mm', culture);
       }
 
       let _isSelected = isSelected(event, selected)
